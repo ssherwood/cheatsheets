@@ -39,8 +39,8 @@
     opt+cmd+f           Refactor->Extract Field
     opt+cmd+n           Refactor->Inline Variable
 
-    opt+shift+up        Move line up
-    opt+shift+down      Move line down
+    opt+shift+up        Move selection up
+    opt+shift+down      Move selection down
 
     cmd+del             Delete line
     cmd+d               Duplicate line

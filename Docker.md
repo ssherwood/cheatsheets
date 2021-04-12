@@ -13,12 +13,18 @@ $ docker ps -a  # show all docker proceeses
 $ docker run <image:tag>       # run an image in foreground
 $ docker run -d <image:tag>    # run an image in the background
 $ docker run -it <image:tag>   # run an image in interactive tty mode
-# docker run -p <host:cntr>    # run an image publishing container ports to host
+$ docker run -p <host:cntr>    # run an image publishing container ports to host
 $ docker run --rm <image:tag>  # run an image and remove it on exit
+
+### Example(s)
+$ docker run -it --rm -d -p 8080:80 --name web nginx 
 ```
 
 ```bash
-$ docker attach <container-id> # attach to a running container
+$ docker logs <container-id>     # fetch logs from a container
+$ docker logs -f <container-id>  # fetch and follow logs from a container
+
+$ docker attach <container-id>   # attach to a running container
 ```
 
 ```bash
